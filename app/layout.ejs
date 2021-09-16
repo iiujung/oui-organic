@@ -1,62 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css" />
+  <link rel="stylesheet" href="./assets/style/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="icon" href="./assets/images/favicon.ico">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <form class="d-flex input-group w-auto ms-0">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+          aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </form>
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img src="./assets/images/logo.jpg" height="100px" alt="logo" />
+      </a>
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center me-0">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+
+        <!-- Notifications -->
+        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+          data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+
+        <!-- Avatar -->
+        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuLink"
+          role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt=""
+            loading="lazy" />
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-around w-100">
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <%- contents %>
 
-    <%- contents %>
+    <footer class="container py-5 px-0 ">
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <div class="footer_header">
+            關於我們
+          </div>
+          <ul class="list-unstyled">
+            <li><a href="#">品牌故事</a></li>
+            <li><a href="#">商店簡介</a></li>
+            <li><a href="#">隱私權條款</a></li>
+          </ul>
 
-    <footer class="footer">
-      footer
+        </div>
+        <div class="col-12 col-md-2">
+          <div class="footer_header">
+            購物說明
+          </div>
+          <ul class="list-unstyled">
+            <li><a href="#">付款方式</a></li>
+            <li><a href="#">運送方式</a></li>
+            <li><a href="#">退換貨方式</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-2">
+          <div class="footer_header">
+            客服資訊
+          </div>
+          <ul class="list-unstyled">
+            <li><a href="#">客服留言</a></li>
+            <li><a href="#">常見問題</a></li>
+            <li><a href="#">會員權益聲明</a></li>
+            <li><a href="#">聯絡我們</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="footer_header">
+            訂閱我們的電子報
+          </div>
+          <div class="form-row col-10 p-0">
+            <label for="inputEmail4"></label>
+            <input type="email" class="form-control form_outline" id="inputEmail4" placeholder="name@name.com">
+            <button type="button" name="button" class="btn btn-link text-dark btn-input">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="form-row">
+            <button type="button" name="button" class="btn text-dark px-0 mr-3">
+              <img src="./assets/images/social-icon-line.png" width="auto" height="24px" alt="homepage" class="">
+            </button>
+            <button type="button" name="button" class="btn text-dark px-0 mr-3">
+              <img src="./assets/images/social-icon-facebook.png" width="auto" height="24px" alt="homepage" class="">
+            </button>
+            <button type="button" name="button" class="btn text-dark px-0 mr-3">
+              <img src="./assets/images/social-icon-instagram.png" width="auto" height="24px" alt="homepage" class="">
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="footer_header">
+            官方購物APP
+          </div>
+          <button type="button" name="button" class="btn btn-outline-dark text-dark">
+            <div class="button_block">
+              <img src="./assets/images/social-icon-apple.png" width="auto" height="24px" alt="homepage" class="">
+            </div>
+          </button>
+          <button type="button" name="button" class="btn btn-outline-dark text-dark">
+            <div class="button_block">
+              <img src="./assets/images/social-icon-google.png" width="auto" height="22px" alt="homepage" class="">
+            </div>
+          </button>
+        </div>
+
+      </div>
+
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
 
 </html>

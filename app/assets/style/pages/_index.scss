@@ -1,7 +1,21 @@
+.special-bar {
+  background: #DBF4F1;
+}
+
+
 .slogan{
+  background: #FFFBF5;
   .subtitle {
     font-family: 'Italianno', cursive;
   }
+}
+
+// tabs
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-top: #FFFFFF;
+  border-right: #FFFFFF;
+  border-left: #FFFFFF;
+  border-bottom: 1px solid #454346;
 }
 
 

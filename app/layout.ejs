@@ -21,11 +21,6 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <!-- Container wrapper -->
     <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
       <form class="d-flex input-group w-auto ms-0">
         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
           aria-describedby="search-addon" />
@@ -65,12 +60,11 @@
         </ul>
 
         <!-- Avatar -->
-        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuLink"
+        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="AvatarDropdownMenuLink"
           role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt=""
-            loading="lazy" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="rounded-circle"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
         </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="AvatarDropdownMenuLink">
           <li>
             <a class="dropdown-item" href="#">My profile</a>
           </li>
@@ -86,22 +80,57 @@
     </div>
     <!-- Container wrapper -->
   </nav>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav justify-content-around w-100">
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">本月優惠 </a></li>
-      </ul>
-    </div>
-  </nav>
+  
   <!-- Navbar -->
+
+  <!-- mega-menu start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav justify-content-around w-100">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> 本月優惠 </a>
+            <div class="dropdown-menu dropdown-large show" data-bs-popper="none">
+              <div class="row g-3">
+                <div class="col-6">
+                  <h6 class="title">子項目分類</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                  </ul>
+                </div><!-- end col-3 -->
+                <div class="col-6">
+                  <h6 class="title">子項目分類</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                    <li><a href="#">本月優惠 </a></li>
+                  </ul>
+                </div><!-- end col-3 -->
+              </div><!-- end row -->
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+        </ul>
+      </div> <!-- navbar-collapse.// -->
+    </div> <!-- container-fluid.// -->
+  </nav>
+  <!-- mega-menu end -->
   <%- contents %>
 
     <footer class="container py-5 px-0 ">

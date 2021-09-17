@@ -1,6 +1,11 @@
+//
+@import "./helpers/base";
+
+
 
 //layout
-@import "./helpers/base";
-@import "./layout/index";
+@import "./layout/footer";
+@import "./layout/header";
 
 // pages
+@import "./pages/index";

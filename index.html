@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/style/all.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="icon" href="./assets/images/favicon.ico">
+  
 
 </head>
 
@@ -21,44 +22,19 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <!-- Container wrapper -->
     <div class="container-fluid">
-      <form class="d-flex input-group w-auto ms-0">
-        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-          aria-describedby="search-addon" />
-        <span class="input-group-text border-0" id="search-addon">
-          <i class="fas fa-search"></i>
-        </span>
-      </form>
+      <!-- >>search-bar -->
+      <div class="input-group w-auto ms-0">
+        <input type="text" class="form-control form_outline fw-light" placeholder="全站搜索" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-primary rounded-circle" type="button" id="search-addon"><i class="fas fa-search"></i></button>
+      </div>
 
-      <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+      <!-- >>Navbar brand -->
+      <a class=" navbar-brand mt-2 mt-lg-0" href="#">
         <img src="./assets/images/logo.jpg" height="100px" alt="logo" />
       </a>
 
-      <!-- Right elements -->
+      <!-- >>elements -->
       <div class="d-flex align-items-center me-0">
-        <!-- Icon -->
-        <a class="text-reset me-3" href="#">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-
-        <!-- Notifications -->
-        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
-          data-mdb-toggle="dropdown" aria-expanded="false">
-          <i class="fas fa-bell"></i>
-          <span class="badge rounded-pill badge-notification bg-danger">1</span>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-          <li>
-            <a class="dropdown-item" href="#">Some news</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Another news</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </li>
-        </ul>
-
         <!-- Avatar -->
         <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="AvatarDropdownMenuLink"
           role="button" data-mdb-toggle="dropdown" aria-expanded="false">
@@ -75,6 +51,15 @@
             <a class="dropdown-item" href="#">Logout</a>
           </li>
         </ul>
+
+        
+
+        <!-- kart -->
+        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+          data-mdb-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
       </div>
       <!-- Right elements -->
     </div>
@@ -93,7 +78,7 @@
         <ul class="navbar-nav justify-content-around w-100">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> 本月優惠 </a>
-            <div class="dropdown-menu dropdown-large show" data-bs-popper="none">
+            <div class="dropdown-menu dropdown_large show" data-bs-popper="none">
               <div class="row g-3">
                 <div class="col-6">
                   <h6 class="title">子項目分類</h6>
@@ -118,7 +103,7 @@
               </div><!-- end row -->
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
+          <li class="nav-item"><a class="nav-link" href="try.html"> 本月優惠 </a></li>
           <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
           <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
           <li class="nav-item"><a class="nav-link" href="#"> 本月優惠 </a></li>
@@ -170,61 +155,65 @@
 </div>
 <!-- carousel-end -->
 
-<!-- special_bar start -->
-<div class="container">
-  <div class="row p-4 p-md-2 d-none d-md-flex">
-    <div class="col col-md-3 d-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-        stroke-linejoin="round" class="feather feather-shopping-cart">
-        <circle cx="9" cy="21" r="1"></circle>
-        <circle cx="20" cy="21" r="1"></circle>
-        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-      </svg><span class="ms-2">國內滿額$2000免運費</span></div>
-    <div class="col-3 d-none d-md-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-        stroke-linejoin="round" class="feather feather-smartphone">
-        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-        <line x1="12" y1="18" x2="12.01" y2="18"></line>
-      </svg><span class="ms-2">下載APP現折$200</span></div>
-    <div class="col-3 d-none d-md-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-        stroke-linejoin="round" class="feather feather-plus-circle">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="12" y1="8" x2="12" y2="16"></line>
-        <line x1="8" y1="12" x2="16" y2="12"></line>
-      </svg><span class="ms-2">會員100%紅利回饋</span></div>
-    <div class="col-3 d-none d-md-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-        stroke-linejoin="round" class="feather feather-heart">
-        <path
-          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-        </path>
-      </svg><span class="ms-2">Try ME有機新手體驗</span></div>
+<!-- special-bar start -->
+<div class="special-bar fw-light">
+  <div class="container">
+    <div class="row p-4 p-md-2 d-none d-md-flex">
+      <div class="col col-md-3 d-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-shopping-cart">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg><span class="ms-2">國內滿額$2000免運費</span></div>
+      <div class="col-3 d-none d-md-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+          height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-smartphone">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg><span class="ms-2">下載APP現折$200</span></div>
+      <div class="col-3 d-none d-md-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+          height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-plus-circle">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="16"></line>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+        </svg><span class="ms-2">會員100%紅利回饋</span></div>
+      <div class="col-3 d-none d-md-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+          height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-heart">
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+          </path>
+        </svg><span class="ms-2">Try ME有機新手體驗</span></div>
+    </div>
   </div>
 </div>
-<!-- special_bar end -->
+<!-- special-bar end -->
 
 <!-- slogan start -->
-<div class="container slogan">
-    <div class="text-center">
-      <p class="subtitle fs-4">Live Better, be Kind to our planet.</p>
-      <p class="title fs-4">有機生活-堅持為小細節的美好</p>
-    </div>
+<div class="slogan py-3">
+  <div class="container ">
+      <div class="text-center">
+        <p class="subtitle fs-2 mb-0">Live Better, be Kind to our planet.</p>
+        <p class="title fs-4 fw-light fst-italic">有機生活堅持微小細節的美好</p>
+      </div>
+  </div>
 </div>
 <!-- slogan end -->
 
 <!-- product-slide start -->
 <ul class="nav nav-tabs nav-fill mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+  <li class="nav-item col-4" role="presentation">
+    <button class="nav-link fs-4 fw-light active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
       role="tab" aria-controls="pills-home" aria-selected="true">新品上市</button>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+  <li class="nav-item col-4" role="presentation">
+    <button class="nav-link fs-4 fw-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
       role="tab" aria-controls="pills-profile" aria-selected="false">排行榜</button>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+  <li class="nav-item col-4" role="presentation">
+    <button class="nav-link fs-4 fw-light" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
       role="tab" aria-controls="pills-contact" aria-selected="false">優惠產品</button>
   </li>
 </ul>

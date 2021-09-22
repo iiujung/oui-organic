@@ -3,13 +3,28 @@
     border: none;
     border-bottom: 1px solid #a7a7a7;
     border-radius: 0;
-    @include mobile {
-        border-bottom: 1px solid #f03737;
+    // mixin test
+    // @include pad {
+    //     border-bottom: 1px solid #f03737;
+    // }
+    // @include desktop {
+    //     border-bottom: 1px solid #379df0;
+    // }
+}
+
+
+.navbar-brand{
+    img{
+        @include pad {
+            min-height: 100px;
+        }
     }
 }
 
 
-
 .dropdown_large{
-    min-width:500px;
+    min-width:300px;
+    @include pad {
+        min-width: 500px;
+    }
 }

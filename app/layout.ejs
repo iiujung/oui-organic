@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./assets/style/all.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="icon" href="./assets/images/favicon.ico">
-  
+
 
 </head>
 
@@ -24,8 +24,10 @@
     <div class="container-fluid justify-content-around">
       <!-- >>search-bar -->
       <div class="input-group w-auto ms-0">
-        <input type="text" class="form-control form_outline fw-light" placeholder="全站搜索" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-primary rounded-circle" type="button" id="search-addon"><i class="fas fa-search"></i></button>
+        <input type="text" class="form-control form_outline fw-light" placeholder="全站搜索"
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-primary rounded-circle" type="button" id="search-addon"><i
+            class="fas fa-search"></i></button>
       </div>
 
       <!-- >>Navbar brand -->
@@ -38,7 +40,12 @@
         <!-- Avatar -->
         <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="AvatarDropdownMenuLink"
           role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="rounded-circle"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="rounded-circle">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
         </a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="AvatarDropdownMenuLink">
           <li>
@@ -52,12 +59,18 @@
           </li>
         </ul>
 
-        
+
 
         <!-- kart -->
         <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
           data-mdb-toggle="dropdown" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-shopping-cart">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
           <span class="badge rounded-pill badge-notification bg-danger">1</span>
         </a>
       </div>
@@ -65,7 +78,7 @@
     </div>
     <!-- Container wrapper -->
   </nav>
-  
+
   <!-- Navbar -->
 
   <!-- mega-menu start -->
@@ -202,12 +215,18 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
     <script>
+      feather.replace()
+    </script>
+    <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
-        slidesPerGroup: 3,
+        slidesPerGroup: 4,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
